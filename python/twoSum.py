@@ -1,4 +1,4 @@
-def twoSum(nums: list, target: int):
+def twoSum(nums: list, target: int) -> list:
     seen = {}
     for i, num in enumerate(nums):
         diff = target - num
