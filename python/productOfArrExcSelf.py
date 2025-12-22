@@ -9,3 +9,5 @@ def productExceptSelf(nums: list[int]) -> list[int]:
         res[i] *= postfix
         postfix *= nums[i]
     return res
+
+print(productExceptSelf(nums=[1,2,3,4]))
