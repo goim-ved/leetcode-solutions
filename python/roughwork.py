@@ -1,6 +1,6 @@
-nums = [1,2,3,4,5,6,7]
-k = 3
-tail = nums[-k:]
-nums = nums[:-k]
-nums = tail + nums
-print(nums)
+from collections import Counter
+
+nums = [4,3,2,7,8,2,3,1]
+count = Counter(nums)
+dups = [num for num, freq in count.items() if freq == 2]
+print(dups)
