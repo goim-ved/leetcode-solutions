@@ -13,8 +13,8 @@ def diameterOfBinaryTree(self, root = Optional[TreeNode]) -> int:
             return 0
         leftH = height(node.left)
         rightH = height(node.right)
-        currentHeight = leftH + rightH
-        self.maxDiameter = max(self.maxDiameter, currentHeight)
+        currentDiam = leftH + rightH
+        self.maxDiameter = max(self.maxDiameter, currentDiam)
         return 1 + max(leftH, rightH)
     height(root)
     return self.maxDiameter
